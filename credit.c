@@ -18,6 +18,7 @@ int main(void) {
 
     if ((dCount < 13 || dCount > 16) || dCount == 14) {
         printf("INVALID\n");
+        return 0;
     }
 
     int nFirst = cNumber / pow(10, dCount - 2);
@@ -80,12 +81,7 @@ int main(void) {
         }
     }
 
-
-    /* Test cases:
-     * 4212123423451234
-     * 22233214423122
-     * 5512231212345
-     */
+    printf("INVALID\n");
 
     return 0;
 }
